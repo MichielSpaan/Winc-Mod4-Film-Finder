@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Film finder</title>
+    <link rel="stylesheet" href="./stylesheet/clear.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script type="text/javascript" src="./script/database.js"></script>
+    <script defer type="text/javascript" src="./script/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Winc Film finder</h1>
+    </header>
+    <main>
+        <nav>
+            <ul id="filters-list">
+                <li>
+                    <input type="radio" id="all" name="film-filter" value="all" checked>
+                    <label for="all">All Movies</label>
+                </li>
+                <li>
+                    <input type="radio" id="latest" name="film-filter" value="latest">
+                    <label for="latest">Latest Movies (2014 or newer)</label>
+                </li>
+                <li>
+                    <input type="radio" id="avengers" name="film-filter" value="avengers">
+                    <label for="avengers">Avenger Movies</label>
+                </li>
+                <li>
+                    <input type="radio" id="x-men" name="film-filter" value="x-men">
+                    <label for="x-men">X-Men Movies</label>
+                </li>
+                <li>
+                    <input type="radio" id="princess" name="film-filter" value="princess">
+                    <label for="princess">Princess Movies</label>
+                </li>
+                <li>
+                    <input type="radio" id="batman" name="film-filter" value="batman">
+                    <label for="batman">Batman Movies</label>
+                </li>
+                <li>
+                    <input type="text" id="searchmovies" placeholder="search..">
+                    <button type="submit" id="searchbutton"><i class="fa fa-search"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <div id="movies-container">
+            <ul id="movies-list">
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h6>Created by: M. Spaan 2022</h6>
+    </footer>
+</body>
+
+</html>
